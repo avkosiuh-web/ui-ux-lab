@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusPulse — Productivity & Timing</title>
+  <style>
+    :root {
+      --bg-dark: #0F172A;
+      --card-bg: #1E293B;
+      --cyan-accent: #06B6D4;
+      --orange-accent: #F97316;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Стилі для заставки */
+    #splash-screen {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    /* Стилі для екрана Про застосунок */
+    #about-screen {
+      display: none;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .svg-box {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+    }
+
+    .close-btn {
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+      width: 140px;
+      height: 38px;
+      background-color: var(--cyan-accent);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .close-btn:hover {
+      background-color: #38BDF8;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 1. Заставка (Splash Screen) -->
+    <div id="splash-screen">
+      <svg class="svg-box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+        <rect width="800" height="500" rx="16" fill="#0F172A"/>
+        <g transform="translate(190, 130)">
+          <circle cx="60" cy="60" r="48" fill="none" stroke="#1E293B" stroke-width="8"/>
+          <circle cx="60" cy="60" r="48" fill="none" stroke="#06B6D4" stroke-width="8" stroke-linecap="round" stroke-dasharray="301" stroke-dashoffset="70"/>
+          <circle cx="60" cy="60" r="7" fill="#F97316"/>
+          <path d="M 24 60 L 42 60 L 51 36 L 63 84 L 73 48 L 81 60 L 96 60" fill="none" stroke="#06B6D4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <g transform="translate(130, 35)">
+            <text x="0" y="40" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="44" fill="#FFFFFF">Focus<tspan fill="#06B6D4">Pulse</tspan></text>
+            <text x="2" y="65" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#64748B" letter-spacing="3">PRODUCTIVITY &amp; TIMING</text>
+          </g>
+        </g>
+        <g transform="translate(250, 310)">
+          <text x="0" y="-12" font-family="'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="13" fill="#94A3B8">Ініціалізація моделей фокусу...</text>
+          <text x="300" y="-12" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" fill="#06B6D4" text-anchor="end">75%</text>
+          <rect width="300" height="8" rx="4" fill="#1E293B"/>
+          <rect width="225" height="8" rx="4" fill="#06B6D4"/>
+        </g>
+        <text x="400" y="450" font-family="'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="12" fill="#475569" text-anchor="middle">FocusPulse v1.0 • НАУ «ХАІ» • 2026</text>
+      </svg>
+    </div>
+
+    <!-- 2. Вікно «Про застосунок» (About Screen) -->
+    <div id="about-screen">
+      <svg class="svg-box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+        <rect width="800" height="500" rx="16" fill="#0F172A"/>
+        <rect width="800" height="64" fill="#1E293B"/>
+        <line x1="0" y1="64" x2="800" y2="64" stroke="#334155" stroke-width="1"/>
+        <g transform="translate(24, 16)">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="#06B6D4" stroke-width="3"/>
+          <circle cx="16" cy="16" r="3" fill="#F97316"/>
+          <text x="40" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF">Focus<tspan fill="#06B6D4">Pulse</tspan></text>
+        </g>
+        <g transform="translate(150, 95)">
+          <rect width="500" height="360" rx="16" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+          <g transform="translate(170, 30)">
+            <circle cx="30" cy="30" r="24" fill="none" stroke="#06B6D4" stroke-width="4"/>
+            <circle cx="30" cy="30" r="4" fill="#F97316"/>
+            <path d="M 12 30 L 21 30 L 25 18 L 31 42 L 36 24 L 40 30 L 48 30" fill="none" stroke="#06B6D4" stroke-width="3" stroke-linecap="round"/>
+            <text x="70" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="26" fill="#FFFFFF">Focus<tspan fill="#06B6D4">Pulse</tspan></text>
+            <text x="72" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#38BDF8">v1.0.0 (Release Build)</text>
+          </g>
+          <text x="40" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94A3B8">
+            <tspan x="40" dy="0">Система контролю персональної продуктивності та оптимізації</tspan>
+            <tspan x="40" dy="18">робочих інтервалів за методологією Pomodoro.</tspan>
+          </text>
+          <line x1="40" y1="150" x2="460" y2="150" stroke="#334155" stroke-width="1"/>
+          <g transform="translate(40, 175)" font-family="'Segoe UI', Roboto, sans-serif" font-size="13">
+            <text x="0" y="0" fill="#64748B">Розробник:</text>
+            <text x="140" y="0" fill="#F8FAFC" font-weight="600">Косюг А.В. (гр. 622п)</text>
+            <text x="0" y="28" fill="#64748B">Організація:</text>
+            <text x="140" y="28" fill="#F8FAFC">НАУ «ХАІ», Кафедра 603</text>
+            <text x="0" y="56" fill="#64748B">Технологічний стек:</text>
+            <text x="140" y="56" fill="#38BDF8" font-weight="500">HTML5 / CSS3 / JS ES6+ / SVG</text>
+            <text x="0" y="84" fill="#64748B">Рік випуску:</text>
+            <text x="140" y="84" fill="#F8FAFC">2026</text>
+          </g>
+        </g>
+      </svg>
+      <button id="close-btn" class="close-btn">ЗАКРИТИ</button>
+    </div>
+  </div>
+
+  <script>
+    // Логіка переходу: заставка показується 2.5 секунди, потім відкривається екран Про застосунок
+    setTimeout(() => {
+      document.getElementById('splash-screen').style.display = 'none';
+      document.getElementById('about-screen').style.display = 'block';
+    }, 2500);
+
+    document.getElementById('close-btn').addEventListener('click', () => {
+      alert('Вікно закрите!');
+    });
+  </script>
+</body>
+</html>
