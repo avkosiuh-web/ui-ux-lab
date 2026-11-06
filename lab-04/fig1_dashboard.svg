@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <!-- 1. Білий фон -->
+  <rect width="1440" height="900" fill="#ffffff" />
+
+  <!-- 2. Напівпрозорі блакитні вертикальні смуги (12-колонкова сітка, відступи по 24px) -->
+  <g fill="rgba(0, 163, 255, 0.08)">
+    <rect x="156" y="0" width="72" height="900" />
+    <rect x="252" y="0" width="72" height="900" />
+    <rect x="348" y="0" width="72" height="900" />
+    <rect x="444" y="0" width="72" height="900" />
+    <rect x="540" y="0" width="72" height="900" />
+    <rect x="636" y="0" width="72" height="900" />
+    <rect x="732" y="0" width="72" height="900" />
+    <rect x="828" y="0" width="72" height="900" />
+    <rect x="924" y="0" width="72" height="900" />
+    <rect x="1020" y="0" width="72" height="900" />
+    <rect x="1116" y="0" width="72" height="900" />
+    <rect x="1212" y="0" width="72" height="900" />
+  </g>
+
+  <!-- Верхня панель (Navbar) -->
+  <rect x="156" y="40" width="1128" height="56" rx="8" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1" />
+  <circle cx="196" cy="68" r="16" fill="#cccccc" />
+  <text x="224" y="74" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333333">FocusPulse</text>
+  <rect x="1228" y="56" width="24" height="24" rx="12" fill="#cccccc" />
+  <rect x="1180" y="56" width="24" height="24" rx="4" fill="#cccccc" />
+
+  <!-- 5. Зліва - список завдань -->
+  <text x="156" y="160" font-family="sans-serif" font-size="24" font-weight="bold" fill="#333333">Today's Tasks</text>
+  
+  <g stroke="#cccccc" stroke-width="1.5">
+    <!-- Завдання 1 -->
+    <rect x="156" y="192" width="360" height="64" rx="8" fill="#ffffff" />
+    <circle cx="188" cy="224" r="10" fill="none" stroke="#999999" stroke-width="2" />
+    <rect x="216" y="218" width="180" height="12" rx="4" fill="#e0e0e0" stroke="none" />
+    
+    <!-- Завдання 2 -->
+    <rect x="156" y="272" width="360" height="64" rx="8" fill="#ffffff" />
+    <circle cx="188" cy="304" r="10" fill="none" stroke="#999999" stroke-width="2" />
+    <rect x="216" y="298" width="140" height="12" rx="4" fill="#e0e0e0" stroke="none" />
+    
+    <!-- Завдання 3 (Активне) -->
+    <rect x="156" y="352" width="360" height="64" rx="8" fill="#f8f9fa" stroke="#333333" stroke-width="2" />
+    <circle cx="188" cy="384" r="10" fill="#333333" stroke="none" />
+    <rect x="216" y="378" width="220" height="12" rx="4" fill="#666666" stroke="none" />
+
+    <!-- Завдання 4 -->
+    <rect x="156" y="432" width="360" height="64" rx="8" fill="#ffffff" />
+    <circle cx="188" cy="464" r="10" fill="none" stroke="#999999" stroke-width="2" />
+    <rect x="216" y="458" width="160" height="12" rx="4" fill="#e0e0e0" stroke="none" />
+  </g>
+
+  <!-- 3. Поверх сітки - схематичний круглий таймер по центру -->
+  <g transform="translate(850, 360)">
+    <!-- Зовнішнє кільце -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#e0e0e0" stroke-width="16" />
+    <!-- Активна частина таймера (імітація прогресу) -->
+    <path d="M 0 -180 A 180 180 0 0 1 180 0" fill="none" stroke="#333333" stroke-width="16" stroke-linecap="round" />
+    <!-- Внутрішній текст -->
+    <text x="0" y="20" font-family="sans-serif" font-size="80" font-weight="bold" fill="#333333" text-anchor="middle">25:00</text>
+    <text x="0" y="60" font-family="sans-serif" font-size="20" fill="#666666" text-anchor="middle">Focus Session</text>
+  </g>
+
+  <!-- 4. Під таймером - три прямокутні кнопки керування -->
+  <g font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">
+    <!-- Кнопка Stop -->
+    <rect x="636" y="600" width="120" height="48" rx="8" fill="#ffffff" stroke="#cccccc" stroke-width="2" />
+    <text x="696" y="630" fill="#666666">Stop</text>
+
+    <!-- Кнопка Start (Головна) -->
+    <rect x="780" y="600" width="140" height="48" rx="8" fill="#333333" />
+    <text x="850" y="630" fill="#ffffff">Start Focus</text>
+
+    <!-- Кнопка Pause -->
+    <rect x="944" y="600" width="120" height="48" rx="8" fill="#ffffff" stroke="#cccccc" stroke-width="2" />
+    <text x="1004" y="630" fill="#666666">Pause</text>
+  </g>
+
+</svg>

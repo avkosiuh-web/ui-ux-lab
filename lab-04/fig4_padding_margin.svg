@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="350" style="background:#FFFFFF; font-family:sans-serif;">
+  <text x="50" y="40" font-size="16" font-weight="bold" fill="#333333">8pt Grid Spacing Specification</text>
+  <rect x="180" y="100" width="280" height="80" rx="10" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2" stroke-dasharray="6" />
+  <rect x="228" y="124" width="184" height="32" rx="6" fill="#333333" />
+  <text x="278" y="145" font-size="16" font-weight="bold" fill="#FFFFFF">Start Focus</text>
+  <line x1="320" y1="100" x2="320" y2="124" stroke="red" stroke-width="2" />
+  <line x1="315" y1="100" x2="325" y2="100" stroke="red" stroke-width="2" />
+  <line x1="315" y1="124" x2="325" y2="124" stroke="red" stroke-width="2" />
+  <text x="335" y="116" font-size="13" font-weight="bold" fill="red">24 px (3x8)</text>
+  <line x1="320" y1="156" x2="320" y2="180" stroke="red" stroke-width="2" />
+  <line x1="315" y1="156" x2="325" y2="156" stroke="red" stroke-width="2" />
+  <line x1="315" y1="180" x2="325" y2="180" stroke="red" stroke-width="2" />
+  <text x="335" y="172" font-size="13" font-weight="bold" fill="red">24 px (3x8)</text>
+  <line x1="180" y1="140" x2="228" y2="140" stroke="red" stroke-width="2" />
+  <line x1="180" y1="135" x2="180" y2="145" stroke="red" stroke-width="2" />
+  <line x1="228" y1="135" x2="228" y2="145" stroke="red" stroke-width="2" />
+  <text x="188" y="165" font-size="13" font-weight="bold" fill="red">48 px (6x8)</text>
+  <line x1="412" y1="140" x2="460" y2="140" stroke="red" stroke-width="2" />
+  <line x1="412" y1="135" x2="412" y2="145" stroke="red" stroke-width="2" />
+  <line x1="460" y1="135" x2="460" y2="145" stroke="red" stroke-width="2" />
+  <text x="420" y="165" font-size="13" font-weight="bold" fill="red">48 px (6x8)</text>
+</svg>
